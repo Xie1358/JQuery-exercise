@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lightbox</title>
+    <link rel="stylesheet" href="src/css/lightbox.css">
+    <style>
+        .container img{
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    
+    <a href="src/images/01.png" data-lightbox="image" data-title="My caption"><img src="src/images/01.png" alt=""></a>
+    <hr>
+    <a href="src/images/01.png" data-lightbox="img" data-title="My caption"><img src="src/images/01.png" alt=""></a>
+    <a href="src/images/02.png" data-lightbox="img" data-title="My caption"><img src="src/images/02.png" alt=""></a>
+    <a href="src/images/03.png" data-lightbox="img" data-title="My caption"><img src="src/images/03.png" alt=""></a>
+</div>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+              crossorigin="anonymous"></script>
+    <script src="src/js/lightbox.js"></script>
+    <script>
+        // https://lokeshdhakar.com/projects/lightbox2/
+        lightbox.option({
+            'wrapAround': true,
+            'albumLabel': '第 %1 張, 共 %2 張'
+        })
+    </script>
+</body>
+</html>
